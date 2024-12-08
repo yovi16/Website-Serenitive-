@@ -1,0 +1,263 @@
+html {
+    scroll-behavior: smooth; /* Mengaktifkan scroll halus */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #7EC8E3;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed; /* Fixed position ensures it stays on top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    background-color: #7EC8E3; /* Background color of the header */
+    color: white;
+    z-index: 1000; /* Ensure it appears above other content */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    padding: 10px 20px;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    background-color: #d4d4d4;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Section Styles */
+#home {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    background-color: #5eb7df;
+    box-sizing: border-box;
+    text-align: center ;
+}
+
+#home .left-colomn {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height section */
+}
+
+#home .left-colomn img {
+    width: 100%; /* Adjust image size */
+    max-width: 900px;
+    border-radius: 50px; /* Optional styling for rounded corners */
+}
+
+#home .right-colomn {
+    flex: 1;
+    padding: 20px;
+}
+
+#home .right-colomn h1 {
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#home .right-colomn p {
+    font-size: 1.2em;
+    color: #f0f8ff;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+#home .right-colomn .read-more {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#home .right-colomn .read-more:hover {
+    background-color: #d4d4d4;
+}
+
+#home .bottom {
+    text-align: center;
+    justify-content: center;
+    padding: 40px;
+    height: 100vh;
+    align-items: center;
+}
+
+
+P{
+    font-size: 1.2em;
+    color: #f0f8ff;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+#contact p{
+    font-size: 1.2em;
+    color: #f0f8ff;
+    margin-bottom: 30px;
+}
+.cta {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+}
+.button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 5px;
+}
+.button i {
+    margin-left: 10px;
+}
+
+#about, #contact, #signup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 20px;
+    background-color: #7EC8E3;
+    box-sizing: border-box;
+}
+
+#proses-layanan{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.left-colomn,
+.right-colomn {
+    flex: 1; /* Membagi ruang di antara kedua kolom */
+    padding: 20px;
+    max-width: 48%; /* Memberikan lebar maksimum untuk kedua kolom */
+    box-sizing: border-box;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.service {
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 0 1 calc(28% - 10px);
+    box-sizing: border-box;
+    text-align: center;
+}
+img {
+    width: auto;
+    border-radius: 10px;
+}
+.service p{
+    color: #333;
+}
+h1{
+    width: 100%;
+    font-size: 2.5em;
+    justify-content: center;
+    margin-bottom: 20px;
+    text-align:center;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.step {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
+}
+h1, h2, h3 {
+    color: #333;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+.social-icons a {
+    color: #2C3E50;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+button {
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #d4d4d4;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
